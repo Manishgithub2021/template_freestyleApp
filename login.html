@@ -2,22 +2,27 @@
 <html>
 <head>
   <title>Login Page</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-  <div class="container">
+  <header>
     <img src="logo.png" alt="Logo">
+  </header>
+  <main>
     <form id="loginForm" action="login.php" method="post">
-      <div class="error-message" id="errorMessage"></div>
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+      <input type="text" id="username" name="username" required><br>
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
+      <input type="password" id="password" name="password" required><br>
       <label for="rememberMe">Remember Me:</label>
-      <input type="checkbox" id="rememberMe" name="rememberMe">
-      <button type="submit">Login</button>
+      <input type="checkbox" id="rememberMe" name="rememberMe"><br>
+      <input type="submit" value="Login">
     </form>
-  </div>
-  <script src="script.js"></script>
+    <div id="errorMessage"></div>
+    <a href="password_recovery.html">Forgot Password?</a>
+  </main>
+  <footer>
+    &copy; 2022 No Limit
+  </footer>
 </body>
 </html>
